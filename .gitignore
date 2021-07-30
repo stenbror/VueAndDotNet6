@@ -3,6 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+[src/presentation/vue-app/node_modules
+[src/presentation/Travel.WebApi/Logs
+
+
 # User-specific files
 *.rsuser
 *.suo
