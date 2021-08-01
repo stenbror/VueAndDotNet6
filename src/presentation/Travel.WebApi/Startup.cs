@@ -57,6 +57,7 @@ namespace Travel.WebApi
                 configuration.RootPath = "../vue-app/dist";
             });
 
+            services.AddCors();
 
         }
 
@@ -74,6 +75,13 @@ namespace Travel.WebApi
             {
                 app.UseSpaStaticFiles();
             }
+
+            app.UseCors(b =>
+            {
+                b.AllowAnyOrigin();
+                b.AllowAnyHeader();
+                b.AllowAnyMethod();
+            });
 
             app.UseHttpsRedirection();
             app.UseRouting();
